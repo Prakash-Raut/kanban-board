@@ -1,34 +1,35 @@
 {
-  "name": "@kanban/db",
-  "type": "module",
-  "exports": {
-    ".": {
-      "default": "./src/index.ts"
-    },
-    "./*": {
-      "default": "./src/*.ts"
-    }
-  },
-  "scripts": {
-    "db:push": "prisma db push",
-    "db:studio": "prisma studio",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev"
-  },
-  "devDependencies": {
-    "prisma": "^7.0.0",
-    "@types/ws": "^8.18.1",
-    "@kanban/config": "workspace:*"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "@prisma/client": "catalog:",
-    "@prisma/adapter-neon": "^7.0.0",
-    "@neondatabase/serverless": "^1.0.2",
-    "ws": "^8.18.3",
-    "dotenv": "^17.2.2",
-    "zod": "^4.1.11"
-  }
+	"name": "@kanban/db",
+	"type": "module",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	},
+	"scripts": {
+		"db:push": "prisma db push",
+		"db:studio": "prisma studio",
+		"db:generate": "prisma generate",
+		"db:migrate": "prisma migrate dev",
+		"db:seed": "prisma db seed"
+	},
+	"devDependencies": {
+		"prisma": "^7.0.0",
+		"@types/ws": "^8.18.1",
+		"@kanban/config": "workspace:*"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@prisma/client": "catalog:",
+		"@prisma/adapter-neon": "^7.0.0",
+		"@neondatabase/serverless": "^1.0.2",
+		"ws": "^8.18.3",
+		"dotenv": "^17.2.2",
+		"zod": "^4.1.11"
+	}
 }
